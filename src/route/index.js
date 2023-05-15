@@ -3,7 +3,6 @@ import {Redirect, Router, Switch} from 'react-router-dom'
 import { MainLayout } from '../layout/MainLayout';
 import routes from './routes';
 import { ToastContainer } from "react-toastify";
-import PrivateRoute from './private';
 import PublicRoute from './public';
 import Loader from '../component/Loader';
 
@@ -18,16 +17,9 @@ const renderRoutes = useMemo(
             to={route.redirect}
             {...route}
             />
-        ) : route.auth ? (
-            <PrivateRoute
-            key={index}
-            // isAuthenticated={props.isAuthenticated}
-            {...route}
-            />
         ) : (
             <PublicRoute 
             key={index} {...route} 
-            // isAuthenticated={props.isAuthenticated}
             />
         )
         ), [props]
@@ -42,13 +34,11 @@ const renderRoutes = useMemo(
                         layout={MainLayout}
                         path="/"
                         exact
-                        // component={Home}
                     />
                     <PublicRoute
                         layout={MainLayout}
                         path="/index"
                         exact
-                        // component={Home}
                     />
                     {renderRoutes}
                     </Switch>
