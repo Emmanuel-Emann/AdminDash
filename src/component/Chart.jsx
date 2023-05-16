@@ -27,7 +27,7 @@ const Chart = () => {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [
       {
-        label: 'My First dataset',
+        label: 'Market',
         backgroundColor: 'rgba(194, 116, 161, 0.5)',
         borderColor: 'rgb(194, 116, 161)',
         fill: false,
@@ -46,9 +46,10 @@ const Chart = () => {
         pointRadius: 2,
         pointHitRadius: 10,
         data: [65, 59, 90, 81, 56, 55, 40],
+        width: 'auto',
       },
       {
-        label: 'My Second dataset',
+        label: 'Sales History',
         backgroundColor: 'rgba(71, 225, 167, 0.5)',
         borderColor: 'rgb(71, 225, 167)',
         fill: false,

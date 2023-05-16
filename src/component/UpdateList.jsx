@@ -8,7 +8,7 @@ const UpdateList = ({text, price, name, src}) => {
         </Box>
         <Box display="flex" alignItems="center" gap="1rem">
             <Text fontSize="14px" color="grey">{text}</Text>
-            <h3>${price}</h3>
+            {/* <h3>${price}</h3> */}
         </Box>
     </OrderedList>
   )

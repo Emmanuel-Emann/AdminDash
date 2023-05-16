@@ -1,5 +1,6 @@
 import { ArrowBackIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { Avatar, Box, Heading, Menu, MenuButton, MenuItem, MenuList, Text, WrapItem } from '@chakra-ui/react'
+import {IoMdNotificationsOutline} from 'react-icons/io'
 
 const Head = ({onClick, onClose, open}) => {
   return (
@@ -16,7 +17,9 @@ const Head = ({onClick, onClose, open}) => {
         </Box>
         <Text fontSize="20px">DashBoard</Text>
         </WrapItem>
-        <Menu>
+        <Box display="flex" alignItems="center" gap="2rem">
+        <IoMdNotificationsOutline/>
+          <Menu>
           <MenuButton>
             <WrapItem>
               <Avatar name='Dan Abrahmov' background="steelblue" cursor="pointer"/>
@@ -30,6 +33,7 @@ const Head = ({onClick, onClose, open}) => {
             <MenuItem fontSize="14px" fontWeight="400">Account Setting</MenuItem>
         </MenuList>
         </Menu>
+        </Box>
     </Box>
 </Heading>
 </>
