@@ -2,7 +2,7 @@ import { Avatar, Box, OrderedList, Text } from '@chakra-ui/react'
 
 const UpdateList = ({text, price, name, src}) => {
   return (
-    <OrderedList display="flex" alignItems="center" gap="2.5rem" mb="2rem" className='order-list'>
+    <OrderedList display="flex" alignItems="center" gap="2.5rem" mb="1rem" className='order-list'>
         <Box>
             <Avatar name={name} src={src} size="lg"/>
         </Box>

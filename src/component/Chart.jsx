@@ -27,7 +27,7 @@ const Chart = () => {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [
       {
-        label: 'Market',
+        label: 'Expenses',
         backgroundColor: 'rgba(194, 116, 161, 0.5)',
         borderColor: 'rgb(194, 116, 161)',
         fill: false,
@@ -49,7 +49,7 @@ const Chart = () => {
         width: 'auto',
       },
       {
-        label: 'Sales History',
+        label: 'Income',
         backgroundColor: 'rgba(71, 225, 167, 0.5)',
         borderColor: 'rgb(71, 225, 167)',
         fill: false,

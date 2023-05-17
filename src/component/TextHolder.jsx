@@ -10,7 +10,7 @@ return (
     background={open ? "rgba(255, 255, 255, 0.202)" : ""}
     width="100%"
     borderRadius="2rem 0 0 2rem"
-    padding=".8rem"
+    padding=".5rem"
     color="#fff"
     >
         {icon}

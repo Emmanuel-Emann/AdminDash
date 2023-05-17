@@ -10,7 +10,7 @@ const Main = ({children}) => {
   const [open, setOpen] = useState(false)
   return (
 <Box display="flex">
-<Box width={open ? "20%" : "0%"} height="100vh" className="fadein">
+<Box width={open ? "20%" : "0%"}  className="fadein">
     {
       open ? (
       <>
