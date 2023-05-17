@@ -11,20 +11,21 @@ return (
     <Box width="100%" height="60vh">
     <Box className="active-users">
         <Box display="flex" alignItems="center" justifyContent="space-between" mb="2rem">
-            <Text fontSize="20">Active users</Text>
+            <Box>
+                <Text fontSize="20" fontWeight="bold">Active users</Text>
+                <h4>Page views per day</h4>
+            </Box>
             <Box display="flex" alignItems="center" gap="1rem">
                 <FaUserFriends size={24}/>
                 <h3>200</h3>
             </Box>
-            
         </Box>
-        
         <ActiveUserChart/>
     </Box>
         <Box height="" className="little-users" display="flex" alignItems="center" justifyContent="space-around">
             <div>
-                <Text fontSize={28}>Orders</Text>
-                <BsMinecartLoaded size={150}/>
+                <Text fontSize={28} fontWeight="bold">Orders</Text>
+                <BsMinecartLoaded size={125}/>
             </div>
             <Box >
                 <div className='orders'>
@@ -40,7 +41,7 @@ return (
     <UpcomingEvent/>
     </Box>
     <Box width="100%" height="60vh" className="category">
-        <Text fontSize="20">Most visited category</Text>
+        <Text fontSize="20" fontWeight="bold">Most visited category</Text>
         <DoughnutChart/>
     </Box>
 </Box>

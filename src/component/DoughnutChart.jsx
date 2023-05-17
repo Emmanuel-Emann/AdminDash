@@ -24,7 +24,7 @@ ChartJS.register(
 
 const DoughnutChart = () => {
   const [data] = useState({
-    labels: ['Eating', 'Drinking', 'Sleeping', 'Designing'],
+    labels: ['Eating 2k', 'Drinking 3k', 'Sleeping 4k', 'Designing 5k'],
     datasets: [
       {
         label: 'My First dataset',

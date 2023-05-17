@@ -114,7 +114,7 @@
   backdrop-filter: blur(17px);
   -webkit-backdrop-filter: blur(17px);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1rem 1rem 5rem 1rem;
 }
 .little-users {
   transition: ease-in-out 1.2s;
@@ -134,4 +134,33 @@ h4 {
   display: flex;
   align-items: center;
   gap: 0.3rem;
+}
+.dot {
+  background: green;
+  margin-top: 0.3rem;
+  width: 6%;
+  height: 0.8rem;
+  border-radius: 1rem;
+}
+.dots {
+  background: blue;
+  margin-top: 0.3rem;
+  width: 6%;
+  height: 0.8rem;
+  border-radius: 1rem;
+}
+.dott {
+  background: red;
+  margin-top: 0.3rem;
+  width: 6%;
+  height: 0.8rem;
+  border-radius: 1rem;
+}
+.map {
+  transition: ease-in-out 1.2s;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(17px);
+  -webkit-backdrop-filter: blur(17px);
+  border-radius: 1rem;
 }

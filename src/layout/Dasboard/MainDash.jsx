@@ -7,7 +7,7 @@ const MainDash = () => {
 return (
 <Box width="100%" display="flex" flexDirection="row" alignItems="center" gap="1rem" padding="1rem">
     <Box width="30%" padding="1rem" className="list-container">
-    <Heading mb="1rem">Most Visited</Heading>
+    <Heading mb="1rem" fontWeight="bold" fontSize="18px">Most Visited</Heading>
     <Box width="100%" height="60vh" className="list-container_filled">
         <TopSellsList/>
     </Box>
