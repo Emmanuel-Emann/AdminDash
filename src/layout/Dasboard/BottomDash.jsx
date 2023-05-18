@@ -1,7 +1,7 @@
 import { Box, Text } from '@chakra-ui/react'
 import { BsThreeDots } from 'react-icons/bs'
-import Map from '../../component/Map'
-import OrderTable from '../../component/OrderTable'
+import Map from '../../common/Map'
+import OrderTable from '../../common/OrderTable'
 
 const BottomDash = () => {
     return (

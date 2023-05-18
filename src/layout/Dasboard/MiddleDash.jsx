@@ -1,9 +1,9 @@
 import { Box, Text } from '@chakra-ui/react'
 import { BsMinecartLoaded } from 'react-icons/bs'
 import { FaUserFriends } from 'react-icons/fa'
-import ActiveUserChart from '../../component/ActiveUserChart'
-import DoughnutChart from '../../component/DoughnutChart'
-import UpcomingEvent from '../../component/UpcomingEvent'
+import ActiveUserChart from '../../common/ActiveUserChart'
+import DoughnutChart from '../../common/DoughnutChart'
+import UpcomingEvent from '../../common/UpcomingEvent'
 
 const MiddleDash = () => {
 return (

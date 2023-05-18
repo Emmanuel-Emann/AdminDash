@@ -8,7 +8,7 @@ const routes = [
         component: Administration,
         fullscreen: true,
         exact: true,
-        auth: true
+        // auth: true
     }
 ]
 

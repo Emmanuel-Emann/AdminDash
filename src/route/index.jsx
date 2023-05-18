@@ -1,17 +1,21 @@
 import { useMemo, Suspense} from 'react';
-import {Redirect, Router, Switch} from 'react-router-dom'
+
 import { MainLayout } from '../layout/MainLayout';
-import routes from './routes';
+
 import { ToastContainer } from "react-toastify";
 import PublicRoute from './public';
-import Loader from '../component/Loader';
 
-const Routes = (props) => {
+import Home from '../layout/Home';
+import Loader from '../common/Loader';
+import routes from './routes';
+import { Navigate, Routes, Route as Switch } from 'react-router-dom';
+
+const Routess = (props) => {
 const renderRoutes = useMemo(
     () =>
         routes.map((route, index) =>
         route.redirect ? (
-            <Redirect
+            <Navigate
             key={index}
             from={route.path}
             to={route.redirect}
@@ -19,14 +23,15 @@ const renderRoutes = useMemo(
             />
         ) : (
             <PublicRoute 
-            key={index} {...route} 
+            key={index} 
+            {...route} 
             />
         )
         ), [props]
     );
 
     return(
-		<Router>
+		<Routes>
 			<Suspense fallback={<Loader /> }>
                 <ToastContainer />
 				<Switch>
@@ -34,25 +39,27 @@ const renderRoutes = useMemo(
                         layout={MainLayout}
                         path="/"
                         exact
+                        component={Home}
                     />
                     <PublicRoute
                         layout={MainLayout}
                         path="/index"
                         exact
+                        component={Home}
                     />
                     {renderRoutes}
                     </Switch>
 			</Suspense>
-		</Router>
+		</Routes>
     )
 }
 
-const mapStateToProps = (state) => {
-    return {
-        application: state.web.application,
-        isAuthenticated: state.auth.isAuthenticated,
-    };
-};
+// const mapStateToProps = (state) => {
+//     return {
+//         application: state.web.application,
+//         isAuthenticated: state.auth.isAuthenticated,
+//     };
+// };
 
 
-export default mapStateToProps(Routes)
+export default Routess

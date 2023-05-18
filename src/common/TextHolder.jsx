@@ -1,7 +1,8 @@
 import { Box, Text } from '@chakra-ui/react'
 import { useState } from 'react'
 
-const TextHolder = ({textHolder, icon, children}) => {
+const TextHolder = (props) => {
+    const {textHolder, icon, children} = props
     const [open, setOpen] = useState(false)
 return (
     <>
@@ -14,8 +15,8 @@ return (
     color="#fff"
     >
         {icon}
-        {open ? <Text fontSize="16px" fontWeight="400" onClick={() => setOpen(false)}>{textHolder}</Text> 
-        : <Text fontSize="16px" fontWeight="400" onClick={() => setOpen(true)}>{textHolder}</Text>}
+        {open ? <Text fontSize="16px" fontWeight="bold" onClick={() => setOpen(false)}>{textHolder}</Text> 
+        : <Text fontSize="16px" fontWeight="bold" onClick={() => setOpen(true)}>{textHolder}</Text>}
     </Box>
     {open ? (
     <Box display="grid" marginLeft="2.2rem" gap="1rem">

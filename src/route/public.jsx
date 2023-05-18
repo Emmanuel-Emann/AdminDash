@@ -1,6 +1,6 @@
+
 import { Route } from "react-router-dom";
 import { MainLayout } from "../layout/MainLayout";
-import { MainAppLayout } from "../layouts/MainAppLayout";
 
 const PublicRoute = ({ 
     component: Component,

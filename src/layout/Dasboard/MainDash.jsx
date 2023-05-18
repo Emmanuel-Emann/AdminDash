@@ -1,7 +1,7 @@
 import { Box, Heading } from '@chakra-ui/react'
-import Chart from '../../component/Chart'
-import TopSellsList from '../../component/TopSellsList'
-import Total from '../../component/Total'
+import Chart from '../../common/Chart'
+import TopSellsList from '../../common/TopSellsList'
+import Total from '../../common/Total'
 
 const MainDash = () => {
 return (
